@@ -11,11 +11,11 @@ let imgUrl=""
 
 
 
-botonAbrirCamara.addEventListener("click", async ()=>{
+botonAbrirCamara.addEventListener("click", async () => {
     const iniciarVideo= await navigator.mediaDevices.getUserMedia({video:true, audio:false})
 
     botonAbrirCamara.style.display="none";
-    campoCamara,style.display="block"
+    campoCamara.style.display="block";
     video.srcObject=iniciarVideo;
 })
 
